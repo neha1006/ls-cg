@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+  box-sizing: border-box;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #010116, #282888);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+header a {
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 0.9em;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .nav-link:hover {
+  color: rgb(231, 247, 15);
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 100%;
+
+}
+
+
+header {
+  background: #ff512f;
+  /* fallback for old browsers */
+  background: var(--bggradient);
+}
+
+header .container .col-md-7 {
+  font-family:Helvetica;
+}
+
+header .container .col-md-7 h6 {
+  padding: 2vmin 5vmin;
+  letter-spacing: 4px;
+  font-family:Helvetica;
+  text-align: left;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+
+  padding: 0vmin 5vmin;
+  text-align: left;
+  font-family:Helvetica;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+  text-align: left;
+  font-family:Helvetica;
+}
+
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 1vmin 5vmin;
+}
+
+/********** section 1 **************/
+
+.section-1 {
+  padding: 20vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 90%;
+
+  border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -20vmin;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(3, 3, 3, 0.2);
+  font-family:Helvetica;
+  z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-family:Helvetica;
+  font-size: 2em;
+  color:black;
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 1em;
+  color: black;
+  font-family:Helvetica;
+}
+
+/*  Section 2  */
+
+.cover {
+  width: 100%;
+  height: 65vmin;
+  background: url("./assets/headerimg.jpg");
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.cover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.cover .content {
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 2, 2, 0.7);
+  padding-top: 19vmin;
+}
+
+.cover .content > h1 {
+  font-family:Helvetica;
+  font-size: 6vmin;
+
+  color: whitesmoke;
+}
+
+.cover .content > p {
+
+  font-size: 4vmin;
+  color: #e5e5e5;
+  font-family:Helvetica;
+}
+
+/*more content*/
+.cover-more {
+  width: 100%;
+  height: auto;
+  background-color: var(--bggradient);;
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+
+.cover-more .overlay-more {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.cover-more .content-more {
+  width: 100%;
+  height: 100%;
+  background-color:var(--bggradient);
+  padding-top: 2vmin;
+  padding-left: 12vmin;
+  padding-right: 12vmin;
+  padding-bottom: 19vmin;
+}
+
+.cover-more .content-more > h1 {
+  font-family:Helvetica;
+  font-size: 8vmin;
+
+  color: white;
+}
+.cover-more .content-more > h4 {
+  font-family:Helvetica;
+text-align: center;
+font-size: 4vmin;
+font-weight: 200;
+
+  color: rgb(255, 255, 255);
+}
+.cover-more .content-more > h2 {
+  font-family:Helvetica;
+  font-size: 5vmin;
+  text-align: center;
+
+  color: white;
+}
+
+.cover-more .content-more > p {
+  font-family:Helvetica;
+  font-size: 3vmin;
+  margin-top: 6vmin;
+  text-align: left;
+  color: white;
+  
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: rgb(204, 237, 241);
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(6, 4, 102, 0.349);
+}
+
+.numbers {
+  margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: rgb(6, 36, 92);
+}
+
+.numbers .rect > p {
+  font-family:Helvetica;;
+  color: rgb(48, 44, 44);
+}
+
+.servicesLSCG > h1 {
+  padding-top: 15vmin;
+  padding-bottom: 0.1em;
+  font-family:Helvetica;
+}
+
+.servicesLSCG > p {
+  color: var(--light-black);
+  font-size: 3vmin;
+  padding-bottom: 10vmin;
+  font-family:Helvetica;
+}
+
+.servicesLSCG .cards .card {
+  width: 22rem;
+  padding: 10px;
+
+  margin: 3vmin 3vmin;
+}
+
+.cards div {
+  padding: 0;
+  margin: 0;
+}
+
+.cards .title {
+  background: rgb(204, 237, 241);
+  padding: 1.4em 2.5em;
+  font-size: 2vmin;
+  font-family:Helvetica;
+}
+
+.card .card-text {
+  padding: 2.5rem 3rem;
+  color: var(--light-black);
+  font-family:Helvetica;
+}
+
+.card-body .pricing {
+  background: rgb(204, 237, 241);
+  
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  padding-top: 20px;
+}
+
+.card-body .pricing > h1 {
+  font-size: 10vmin;
+  padding: 1em 0.5em;
+  font-family:Helvetica;
+}
+
+/* Section 3 */
+
+.section-3 {
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: var(--bggradient);
+}
+
+.section-3 .col-md-12 > h1 {
+  padding: 2em 0 0.5em 0;
+  color: whitesmoke;
+  font-size: 6vmin;
+  font-family:Helvetica;
+}
+
+.section-3 .col-md-12 > p {
+  padding: 0 4em;
+  padding-bottom: 2em;
+  color: var(--light-gray);
+  font-size: 3vmin;
+  font-family:Helvetica;
+}
+
+/* Section Team */
+
+.section-4 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+  font-family:Helvetica;
+}
+.section-4 .container p {
+  font-size: 4vmin;
+  padding-top: 14vmin;
+  font-family:Helvetica;
+}
+
+.section-4 .team {
+  padding: 10vmin 4vmin;
+}
+
+.section-4 .card {
+  width: 22em;
+  margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card-body > a {
+  font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3rem;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+footer {
+  background: var(--bggradient);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+  
+}
+
+footer p > span {
+  color: #ff512f;
+  font-family:Helvetica;
+
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: white;
+  font-family:Helvetica;
+}
+
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #0f1111;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+
+  transition: 400ms;
+}
+
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+  font-family:Helvetica;
+}
+.cookie-container p {
+  margin-top: 20px;
+  font-family:Helvetica;
+  padding: 10px;
+}
+
+.cookie-btn {
+  background: #eaf0ea;
+  border: 0;
+  color: #000208;
+  padding: 10px 38px;
+  font-size: 18px;
+
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
